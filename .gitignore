@@ -1,1 +1,3 @@
 data
+resnet/files/custom_resnet18_checkpoint.pt
+resnet/files/torchvision_resnet18_checkpoint.pt
