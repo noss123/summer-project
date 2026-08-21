@@ -1,0 +1,14 @@
+{
+    "run": "vit-cutmix",
+    "directory": "../data",
+    "imagedim": 224,
+    "batchsize": 128,
+    "lr": 0.001,
+    "min_lr": 0.000001,
+    "num_classes": 10,
+    "drop_prob": 0.1,
+    "weight_decay": 0.05,
+    "epochs": 100,
+    "warmup": 5,
+    "with_cutmix": true
+}
