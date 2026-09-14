@@ -1,0 +1,343 @@
+W0822 14:41:16.906000 1072806 torch/distributed/run.py:766] 
+W0822 14:41:16.906000 1072806 torch/distributed/run.py:766] *****************************************
+W0822 14:41:16.906000 1072806 torch/distributed/run.py:766] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0822 14:41:16.906000 1072806 torch/distributed/run.py:766] *****************************************
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/sian/.netrc.
+wandb: Currently logged in as: sian-shinjo (sian-shinjo-iiit-hyderabad) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run vdir3ygq
+wandb: Tracking run with wandb version 0.28.2
+wandb: Run data is saved locally in /home2/sian/summer-project/vision-transformer/wandb/run-20260822_144142-vdir3ygq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vit-cutmix
+wandb: ⭐️ View project at https://wandb.ai/sian-shinjo-iiit-hyderabad/vision-transformer
+wandb: 🚀 View run at https://wandb.ai/sian-shinjo-iiit-hyderabad/vision-transformer/runs/vdir3ygq
+Starting training from scratch...
+epoch: 1/300	current LR: 0.000059	trainloss: 2.2735	trainacc: 15.73%	testacc: 23.03%
+epoch: 2/300	current LR: 0.000109	trainloss: 2.2329	trainacc: 19.94%	testacc: 30.67%
+epoch: 3/300	current LR: 0.000159	trainloss: 2.1609	trainacc: 24.31%	testacc: 38.31%
+epoch: 4/300	current LR: 0.000208	trainloss: 2.1126	trainacc: 25.89%	testacc: 42.49%
+epoch: 5/300	current LR: 0.000258	trainloss: 2.0808	trainacc: 30.10%	testacc: 43.35%
+epoch: 6/300	current LR: 0.000307	trainloss: 2.0583	trainacc: 30.03%	testacc: 45.75%
+epoch: 7/300	current LR: 0.000357	trainloss: 2.0378	trainacc: 30.79%	testacc: 49.72%
+epoch: 8/300	current LR: 0.000406	trainloss: 2.0464	trainacc: 30.37%	testacc: 41.67%
+epoch: 9/300	current LR: 0.000456	trainloss: 2.0331	trainacc: 31.87%	testacc: 51.20%
+epoch: 10/300	current LR: 0.000505	trainloss: 2.0659	trainacc: 29.61%	testacc: 40.35%
+epoch: 11/300	current LR: 0.000555	trainloss: 2.0737	trainacc: 28.34%	testacc: 42.44%
+epoch: 12/300	current LR: 0.000604	trainloss: 2.1034	trainacc: 26.63%	testacc: 49.01%
+epoch: 13/300	current LR: 0.000654	trainloss: 2.1084	trainacc: 26.93%	testacc: 38.21%
+epoch: 14/300	current LR: 0.000703	trainloss: 2.1396	trainacc: 24.63%	testacc: 37.09%
+epoch: 15/300	current LR: 0.000753	trainloss: 2.1493	trainacc: 24.73%	testacc: 37.44%
+epoch: 16/300	current LR: 0.000802	trainloss: 2.1464	trainacc: 24.20%	testacc: 34.23%
+epoch: 17/300	current LR: 0.000852	trainloss: 2.1355	trainacc: 24.69%	testacc: 30.77%
+epoch: 18/300	current LR: 0.000901	trainloss: 2.1398	trainacc: 25.07%	testacc: 36.78%
+epoch: 19/300	current LR: 0.000951	trainloss: 2.1307	trainacc: 25.55%	testacc: 43.45%
+/home2/sian/summer-project/vision-transformer/.venv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+epoch: 20/300	current LR: 0.001000	trainloss: 2.1216	trainacc: 26.48%	testacc: 38.97%
+/home2/sian/summer-project/vision-transformer/.venv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+epoch: 21/300	current LR: 0.001000	trainloss: 2.1260	trainacc: 25.26%	testacc: 41.16%
+epoch: 22/300	current LR: 0.001000	trainloss: 2.1164	trainacc: 25.30%	testacc: 35.91%
+epoch: 23/300	current LR: 0.001000	trainloss: 2.1275	trainacc: 24.27%	testacc: 40.80%
+epoch: 24/300	current LR: 0.000999	trainloss: 2.1212	trainacc: 25.79%	testacc: 40.19%
+epoch: 25/300	current LR: 0.000999	trainloss: 2.0994	trainacc: 26.84%	testacc: 37.85%
+epoch: 26/300	current LR: 0.000999	trainloss: 2.1057	trainacc: 26.40%	testacc: 42.33%
+epoch: 27/300	current LR: 0.000998	trainloss: 2.0885	trainacc: 27.77%	testacc: 40.04%
+epoch: 28/300	current LR: 0.000998	trainloss: 2.0952	trainacc: 28.19%	testacc: 40.96%
+epoch: 29/300	current LR: 0.000997	trainloss: 2.1091	trainacc: 26.72%	testacc: 40.30%
+epoch: 30/300	current LR: 0.000997	trainloss: 2.1043	trainacc: 27.62%	testacc: 39.12%
+epoch: 31/300	current LR: 0.000996	trainloss: 2.1024	trainacc: 27.84%	testacc: 40.30%
+epoch: 32/300	current LR: 0.000995	trainloss: 2.1105	trainacc: 26.74%	testacc: 35.71%
+epoch: 33/300	current LR: 0.000995	trainloss: 2.1150	trainacc: 26.57%	testacc: 41.31%
+epoch: 34/300	current LR: 0.000994	trainloss: 2.0974	trainacc: 27.50%	testacc: 41.21%
+epoch: 35/300	current LR: 0.000993	trainloss: 2.1482	trainacc: 24.84%	testacc: 36.53%
+epoch: 36/300	current LR: 0.000992	trainloss: 2.1165	trainacc: 26.74%	testacc: 40.04%
+epoch: 37/300	current LR: 0.000991	trainloss: 2.0960	trainacc: 27.31%	testacc: 42.28%
+epoch: 38/300	current LR: 0.000990	trainloss: 2.1023	trainacc: 26.25%	testacc: 40.96%
+epoch: 39/300	current LR: 0.000989	trainloss: 2.1057	trainacc: 27.14%	testacc: 37.54%
+epoch: 40/300	current LR: 0.000987	trainloss: 2.0945	trainacc: 27.92%	testacc: 38.41%
+epoch: 41/300	current LR: 0.000986	trainloss: 2.0984	trainacc: 27.77%	testacc: 39.99%
+epoch: 42/300	current LR: 0.000985	trainloss: 2.0748	trainacc: 29.12%	testacc: 47.12%
+epoch: 43/300	current LR: 0.000983	trainloss: 2.1125	trainacc: 26.65%	testacc: 36.07%
+epoch: 44/300	current LR: 0.000982	trainloss: 2.1031	trainacc: 27.56%	testacc: 44.27%
+epoch: 45/300	current LR: 0.000980	trainloss: 2.0995	trainacc: 27.98%	testacc: 38.87%
+epoch: 46/300	current LR: 0.000979	trainloss: 2.0805	trainacc: 28.00%	testacc: 38.51%
+epoch: 47/300	current LR: 0.000977	trainloss: 2.0832	trainacc: 28.03%	testacc: 39.38%
+epoch: 48/300	current LR: 0.000976	trainloss: 2.1114	trainacc: 27.14%	testacc: 39.84%
+epoch: 49/300	current LR: 0.000974	trainloss: 2.0939	trainacc: 28.66%	testacc: 43.30%
+epoch: 50/300	current LR: 0.000972	trainloss: 2.0779	trainacc: 28.74%	testacc: 43.20%
+epoch: 51/300	current LR: 0.000970	trainloss: 2.0698	trainacc: 28.76%	testacc: 43.50%
+epoch: 52/300	current LR: 0.000968	trainloss: 2.0538	trainacc: 30.05%	testacc: 44.22%
+epoch: 53/300	current LR: 0.000966	trainloss: 2.0520	trainacc: 30.12%	testacc: 44.98%
+epoch: 54/300	current LR: 0.000964	trainloss: 2.0791	trainacc: 28.32%	testacc: 40.24%
+epoch: 55/300	current LR: 0.000962	trainloss: 2.0525	trainacc: 30.39%	testacc: 45.95%
+epoch: 56/300	current LR: 0.000960	trainloss: 2.0711	trainacc: 28.57%	testacc: 40.96%
+epoch: 57/300	current LR: 0.000958	trainloss: 2.0363	trainacc: 30.43%	testacc: 46.05%
+epoch: 58/300	current LR: 0.000955	trainloss: 2.0381	trainacc: 31.55%	testacc: 44.98%
+epoch: 59/300	current LR: 0.000953	trainloss: 2.0448	trainacc: 30.10%	testacc: 47.22%
+epoch: 60/300	current LR: 0.000951	trainloss: 2.0584	trainacc: 30.45%	testacc: 48.19%
+epoch: 61/300	current LR: 0.000948	trainloss: 2.0251	trainacc: 31.40%	testacc: 43.76%
+epoch: 62/300	current LR: 0.000946	trainloss: 2.0430	trainacc: 30.96%	testacc: 44.78%
+epoch: 63/300	current LR: 0.000943	trainloss: 2.0412	trainacc: 31.85%	testacc: 45.03%
+epoch: 64/300	current LR: 0.000940	trainloss: 2.0268	trainacc: 31.78%	testacc: 45.80%
+epoch: 65/300	current LR: 0.000938	trainloss: 2.0324	trainacc: 30.83%	testacc: 48.34%
+epoch: 66/300	current LR: 0.000935	trainloss: 2.0282	trainacc: 30.75%	testacc: 49.06%
+epoch: 67/300	current LR: 0.000932	trainloss: 2.0064	trainacc: 32.48%	testacc: 47.02%
+epoch: 68/300	current LR: 0.000929	trainloss: 2.0200	trainacc: 32.16%	testacc: 48.60%
+epoch: 69/300	current LR: 0.000926	trainloss: 2.0259	trainacc: 31.72%	testacc: 50.94%
+epoch: 70/300	current LR: 0.000923	trainloss: 1.9997	trainacc: 32.78%	testacc: 49.87%
+epoch: 71/300	current LR: 0.000920	trainloss: 1.9728	trainacc: 33.77%	testacc: 50.53%
+epoch: 72/300	current LR: 0.000917	trainloss: 2.0162	trainacc: 31.68%	testacc: 50.64%
+epoch: 73/300	current LR: 0.000914	trainloss: 1.9913	trainacc: 33.26%	testacc: 48.60%
+epoch: 74/300	current LR: 0.000911	trainloss: 1.9810	trainacc: 33.26%	testacc: 49.77%
+epoch: 75/300	current LR: 0.000908	trainloss: 1.9817	trainacc: 34.40%	testacc: 52.67%
+epoch: 76/300	current LR: 0.000905	trainloss: 1.9829	trainacc: 33.52%	testacc: 49.62%
+epoch: 77/300	current LR: 0.000901	trainloss: 1.9558	trainacc: 34.85%	testacc: 54.10%
+epoch: 78/300	current LR: 0.000898	trainloss: 1.9727	trainacc: 34.34%	testacc: 54.05%
+epoch: 79/300	current LR: 0.000894	trainloss: 1.9703	trainacc: 33.98%	testacc: 52.47%
+epoch: 80/300	current LR: 0.000891	trainloss: 1.9663	trainacc: 35.52%	testacc: 52.57%
+epoch: 81/300	current LR: 0.000888	trainloss: 1.9630	trainacc: 34.93%	testacc: 52.98%
+epoch: 82/300	current LR: 0.000884	trainloss: 1.9587	trainacc: 35.23%	testacc: 54.36%
+epoch: 83/300	current LR: 0.000880	trainloss: 1.9586	trainacc: 35.80%	testacc: 53.08%
+epoch: 84/300	current LR: 0.000877	trainloss: 1.9167	trainacc: 37.42%	testacc: 56.14%
+epoch: 85/300	current LR: 0.000873	trainloss: 1.9195	trainacc: 37.09%	testacc: 56.55%
+epoch: 86/300	current LR: 0.000869	trainloss: 1.9348	trainacc: 37.17%	testacc: 58.69%
+epoch: 87/300	current LR: 0.000865	trainloss: 1.9302	trainacc: 36.96%	testacc: 54.81%
+epoch: 88/300	current LR: 0.000862	trainloss: 1.9215	trainacc: 37.47%	testacc: 55.93%
+epoch: 89/300	current LR: 0.000858	trainloss: 1.9218	trainacc: 37.09%	testacc: 58.79%
+epoch: 90/300	current LR: 0.000854	trainloss: 1.9261	trainacc: 37.89%	testacc: 57.31%
+epoch: 91/300	current LR: 0.000850	trainloss: 1.9179	trainacc: 38.01%	testacc: 57.67%
+epoch: 92/300	current LR: 0.000846	trainloss: 1.9016	trainacc: 38.75%	testacc: 58.07%
+epoch: 93/300	current LR: 0.000842	trainloss: 1.8905	trainacc: 38.50%	testacc: 60.11%
+epoch: 94/300	current LR: 0.000837	trainloss: 1.9119	trainacc: 37.15%	testacc: 58.33%
+epoch: 95/300	current LR: 0.000833	trainloss: 1.8839	trainacc: 39.18%	testacc: 57.56%
+epoch: 96/300	current LR: 0.000829	trainloss: 1.8831	trainacc: 39.87%	testacc: 61.39%
+epoch: 97/300	current LR: 0.000825	trainloss: 1.8784	trainacc: 39.58%	testacc: 61.39%
+epoch: 98/300	current LR: 0.000821	trainloss: 1.8866	trainacc: 38.12%	testacc: 60.26%
+epoch: 99/300	current LR: 0.000816	trainloss: 1.8570	trainacc: 39.87%	testacc: 63.27%
+epoch: 100/300	current LR: 0.000812	trainloss: 1.8703	trainacc: 39.64%	testacc: 59.96%
+epoch: 101/300	current LR: 0.000808	trainloss: 1.8744	trainacc: 39.85%	testacc: 60.32%
+epoch: 102/300	current LR: 0.000803	trainloss: 1.8477	trainacc: 40.61%	testacc: 59.14%
+epoch: 103/300	current LR: 0.000799	trainloss: 1.8279	trainacc: 41.44%	testacc: 58.94%
+epoch: 104/300	current LR: 0.000794	trainloss: 1.8545	trainacc: 39.70%	testacc: 61.33%
+epoch: 105/300	current LR: 0.000790	trainloss: 1.8648	trainacc: 40.21%	testacc: 62.20%
+epoch: 106/300	current LR: 0.000785	trainloss: 1.8320	trainacc: 41.69%	testacc: 64.54%
+epoch: 107/300	current LR: 0.000780	trainloss: 1.8265	trainacc: 41.73%	testacc: 63.47%
+epoch: 108/300	current LR: 0.000776	trainloss: 1.8356	trainacc: 42.30%	testacc: 64.29%
+epoch: 109/300	current LR: 0.000771	trainloss: 1.8145	trainacc: 41.99%	testacc: 65.36%
+epoch: 110/300	current LR: 0.000766	trainloss: 1.8841	trainacc: 39.47%	testacc: 63.88%
+epoch: 111/300	current LR: 0.000761	trainloss: 1.8162	trainacc: 42.37%	testacc: 65.21%
+epoch: 112/300	current LR: 0.000757	trainloss: 1.8157	trainacc: 41.84%	testacc: 61.23%
+epoch: 113/300	current LR: 0.000752	trainloss: 1.8401	trainacc: 40.57%	testacc: 65.26%
+epoch: 114/300	current LR: 0.000747	trainloss: 1.7777	trainacc: 44.94%	testacc: 64.95%
+epoch: 115/300	current LR: 0.000742	trainloss: 1.7979	trainacc: 42.96%	testacc: 67.14%
+epoch: 116/300	current LR: 0.000737	trainloss: 1.8172	trainacc: 43.08%	testacc: 67.09%
+epoch: 117/300	current LR: 0.000732	trainloss: 1.7913	trainacc: 44.31%	testacc: 59.76%
+epoch: 118/300	current LR: 0.000727	trainloss: 1.7996	trainacc: 43.89%	testacc: 66.58%
+epoch: 119/300	current LR: 0.000722	trainloss: 1.8057	trainacc: 42.68%	testacc: 66.94%
+epoch: 120/300	current LR: 0.000717	trainloss: 1.8003	trainacc: 41.96%	testacc: 63.42%
+epoch: 121/300	current LR: 0.000712	trainloss: 1.7863	trainacc: 43.51%	testacc: 68.01%
+epoch: 122/300	current LR: 0.000707	trainloss: 1.7551	trainacc: 45.45%	testacc: 68.31%
+epoch: 123/300	current LR: 0.000702	trainloss: 1.7632	trainacc: 45.30%	testacc: 67.19%
+epoch: 124/300	current LR: 0.000697	trainloss: 1.7774	trainacc: 43.70%	testacc: 67.14%
+epoch: 125/300	current LR: 0.000692	trainloss: 1.7766	trainacc: 44.39%	testacc: 68.82%
+epoch: 126/300	current LR: 0.000686	trainloss: 1.7672	trainacc: 45.05%	testacc: 68.06%
+epoch: 127/300	current LR: 0.000681	trainloss: 1.7538	trainacc: 45.83%	testacc: 68.98%
+epoch: 128/300	current LR: 0.000676	trainloss: 1.7408	trainacc: 45.41%	testacc: 66.73%
+epoch: 129/300	current LR: 0.000671	trainloss: 1.7502	trainacc: 46.29%	testacc: 68.98%
+epoch: 130/300	current LR: 0.000665	trainloss: 1.7759	trainacc: 45.60%	testacc: 69.18%
+epoch: 131/300	current LR: 0.000660	trainloss: 1.7615	trainacc: 45.32%	testacc: 69.03%
+epoch: 132/300	current LR: 0.000655	trainloss: 1.7379	trainacc: 47.31%	testacc: 69.03%
+epoch: 133/300	current LR: 0.000650	trainloss: 1.7405	trainacc: 46.50%	testacc: 68.31%
+epoch: 134/300	current LR: 0.000644	trainloss: 1.7126	trainacc: 47.41%	testacc: 68.16%
+epoch: 135/300	current LR: 0.000639	trainloss: 1.7646	trainacc: 45.01%	testacc: 70.71%
+epoch: 136/300	current LR: 0.000633	trainloss: 1.7165	trainacc: 48.13%	testacc: 69.79%
+epoch: 137/300	current LR: 0.000628	trainloss: 1.7576	trainacc: 45.01%	testacc: 68.42%
+epoch: 138/300	current LR: 0.000623	trainloss: 1.7240	trainacc: 47.35%	testacc: 70.10%
+epoch: 139/300	current LR: 0.000617	trainloss: 1.7463	trainacc: 45.36%	testacc: 68.72%
+epoch: 140/300	current LR: 0.000612	trainloss: 1.7439	trainacc: 46.12%	testacc: 71.01%
+epoch: 141/300	current LR: 0.000606	trainloss: 1.6936	trainacc: 48.00%	testacc: 71.27%
+epoch: 142/300	current LR: 0.000601	trainloss: 1.7396	trainacc: 46.08%	testacc: 71.17%
+epoch: 143/300	current LR: 0.000595	trainloss: 1.7388	trainacc: 46.99%	testacc: 72.34%
+epoch: 144/300	current LR: 0.000590	trainloss: 1.7327	trainacc: 46.82%	testacc: 70.86%
+epoch: 145/300	current LR: 0.000584	trainloss: 1.7079	trainacc: 47.37%	testacc: 71.57%
+epoch: 146/300	current LR: 0.000579	trainloss: 1.6957	trainacc: 47.58%	testacc: 71.06%
+epoch: 147/300	current LR: 0.000573	trainloss: 1.7137	trainacc: 48.41%	testacc: 71.63%
+epoch: 148/300	current LR: 0.000568	trainloss: 1.6929	trainacc: 47.75%	testacc: 70.40%
+epoch: 149/300	current LR: 0.000562	trainloss: 1.7246	trainacc: 47.46%	testacc: 71.78%
+epoch: 150/300	current LR: 0.000556	trainloss: 1.6959	trainacc: 48.74%	testacc: 70.96%
+epoch: 151/300	current LR: 0.000551	trainloss: 1.6798	trainacc: 49.02%	testacc: 71.83%
+epoch: 152/300	current LR: 0.000545	trainloss: 1.6843	trainacc: 48.72%	testacc: 72.59%
+epoch: 153/300	current LR: 0.000540	trainloss: 1.7201	trainacc: 48.62%	testacc: 72.29%
+epoch: 154/300	current LR: 0.000534	trainloss: 1.6920	trainacc: 48.85%	testacc: 71.98%
+epoch: 155/300	current LR: 0.000529	trainloss: 1.6976	trainacc: 48.26%	testacc: 69.79%
+epoch: 156/300	current LR: 0.000523	trainloss: 1.6755	trainacc: 50.43%	testacc: 72.64%
+epoch: 157/300	current LR: 0.000517	trainloss: 1.6775	trainacc: 48.89%	testacc: 73.10%
+epoch: 158/300	current LR: 0.000512	trainloss: 1.7111	trainacc: 48.07%	testacc: 70.96%
+epoch: 159/300	current LR: 0.000506	trainloss: 1.6839	trainacc: 49.21%	testacc: 72.95%
+epoch: 160/300	current LR: 0.000501	trainloss: 1.6854	trainacc: 48.22%	testacc: 73.31%
+epoch: 161/300	current LR: 0.000495	trainloss: 1.6931	trainacc: 49.21%	testacc: 73.82%
+epoch: 162/300	current LR: 0.000489	trainloss: 1.6553	trainacc: 51.40%	testacc: 73.76%
+epoch: 163/300	current LR: 0.000484	trainloss: 1.7096	trainacc: 48.38%	testacc: 74.43%
+epoch: 164/300	current LR: 0.000478	trainloss: 1.6679	trainacc: 49.88%	testacc: 73.46%
+epoch: 165/300	current LR: 0.000472	trainloss: 1.6402	trainacc: 51.40%	testacc: 74.07%
+epoch: 166/300	current LR: 0.000467	trainloss: 1.6841	trainacc: 49.93%	testacc: 74.38%
+epoch: 167/300	current LR: 0.000461	trainloss: 1.6710	trainacc: 48.74%	testacc: 74.38%
+epoch: 168/300	current LR: 0.000456	trainloss: 1.6323	trainacc: 51.49%	testacc: 73.15%
+epoch: 169/300	current LR: 0.000450	trainloss: 1.6861	trainacc: 48.60%	testacc: 74.43%
+epoch: 170/300	current LR: 0.000445	trainloss: 1.6780	trainacc: 50.24%	testacc: 74.22%
+epoch: 171/300	current LR: 0.000439	trainloss: 1.6411	trainacc: 50.79%	testacc: 74.89%
+epoch: 172/300	current LR: 0.000433	trainloss: 1.6293	trainacc: 51.51%	testacc: 73.76%
+epoch: 173/300	current LR: 0.000428	trainloss: 1.6373	trainacc: 51.72%	testacc: 74.58%
+epoch: 174/300	current LR: 0.000422	trainloss: 1.6321	trainacc: 51.72%	testacc: 76.11%
+epoch: 175/300	current LR: 0.000417	trainloss: 1.6493	trainacc: 51.55%	testacc: 75.96%
+epoch: 176/300	current LR: 0.000411	trainloss: 1.6171	trainacc: 52.00%	testacc: 76.06%
+epoch: 177/300	current LR: 0.000406	trainloss: 1.6280	trainacc: 52.23%	testacc: 75.19%
+epoch: 178/300	current LR: 0.000400	trainloss: 1.6097	trainacc: 53.26%	testacc: 75.85%
+epoch: 179/300	current LR: 0.000395	trainloss: 1.6464	trainacc: 51.76%	testacc: 73.92%
+epoch: 180/300	current LR: 0.000389	trainloss: 1.6235	trainacc: 52.67%	testacc: 74.73%
+epoch: 181/300	current LR: 0.000384	trainloss: 1.6420	trainacc: 51.87%	testacc: 75.14%
+epoch: 182/300	current LR: 0.000378	trainloss: 1.6150	trainacc: 52.73%	testacc: 74.73%
+epoch: 183/300	current LR: 0.000373	trainloss: 1.5874	trainacc: 53.79%	testacc: 76.26%
+epoch: 184/300	current LR: 0.000368	trainloss: 1.6034	trainacc: 53.12%	testacc: 75.85%
+epoch: 185/300	current LR: 0.000362	trainloss: 1.6062	trainacc: 53.33%	testacc: 76.52%
+epoch: 186/300	current LR: 0.000357	trainloss: 1.5855	trainacc: 53.20%	testacc: 77.18%
+epoch: 187/300	current LR: 0.000351	trainloss: 1.6411	trainacc: 50.92%	testacc: 75.29%
+epoch: 188/300	current LR: 0.000346	trainloss: 1.5647	trainacc: 54.66%	testacc: 76.46%
+epoch: 189/300	current LR: 0.000341	trainloss: 1.5736	trainacc: 55.31%	testacc: 76.62%
+epoch: 190/300	current LR: 0.000336	trainloss: 1.5876	trainacc: 53.52%	testacc: 76.77%
+epoch: 191/300	current LR: 0.000330	trainloss: 1.6128	trainacc: 53.09%	testacc: 76.31%
+epoch: 192/300	current LR: 0.000325	trainloss: 1.6090	trainacc: 53.12%	testacc: 75.75%
+epoch: 193/300	current LR: 0.000320	trainloss: 1.6028	trainacc: 54.07%	testacc: 77.38%
+epoch: 194/300	current LR: 0.000315	trainloss: 1.6083	trainacc: 52.80%	testacc: 77.02%
+epoch: 195/300	current LR: 0.000309	trainloss: 1.5954	trainacc: 52.52%	testacc: 76.97%
+epoch: 196/300	current LR: 0.000304	trainloss: 1.5370	trainacc: 55.76%	testacc: 76.36%
+epoch: 197/300	current LR: 0.000299	trainloss: 1.5479	trainacc: 55.97%	testacc: 77.59%
+epoch: 198/300	current LR: 0.000294	trainloss: 1.6043	trainacc: 54.13%	testacc: 77.08%
+epoch: 199/300	current LR: 0.000289	trainloss: 1.5331	trainacc: 56.64%	testacc: 76.97%
+epoch: 200/300	current LR: 0.000284	trainloss: 1.5511	trainacc: 55.84%	testacc: 78.60%
+epoch: 201/300	current LR: 0.000279	trainloss: 1.5718	trainacc: 53.96%	testacc: 77.89%
+epoch: 202/300	current LR: 0.000274	trainloss: 1.5853	trainacc: 54.32%	testacc: 77.74%
+epoch: 203/300	current LR: 0.000269	trainloss: 1.5499	trainacc: 55.61%	testacc: 78.55%
+epoch: 204/300	current LR: 0.000264	trainloss: 1.5719	trainacc: 54.15%	testacc: 78.55%
+epoch: 205/300	current LR: 0.000259	trainloss: 1.5868	trainacc: 53.81%	testacc: 79.01%
+epoch: 206/300	current LR: 0.000254	trainloss: 1.5308	trainacc: 56.58%	testacc: 78.09%
+epoch: 207/300	current LR: 0.000249	trainloss: 1.5265	trainacc: 56.24%	testacc: 78.45%
+epoch: 208/300	current LR: 0.000244	trainloss: 1.5794	trainacc: 55.23%	testacc: 78.30%
+epoch: 209/300	current LR: 0.000240	trainloss: 1.5777	trainacc: 53.69%	testacc: 78.04%
+epoch: 210/300	current LR: 0.000235	trainloss: 1.5684	trainacc: 54.36%	testacc: 77.94%
+epoch: 211/300	current LR: 0.000230	trainloss: 1.5515	trainacc: 55.71%	testacc: 78.25%
+epoch: 212/300	current LR: 0.000225	trainloss: 1.5704	trainacc: 54.64%	testacc: 77.43%
+epoch: 213/300	current LR: 0.000221	trainloss: 1.5447	trainacc: 56.68%	testacc: 79.01%
+epoch: 214/300	current LR: 0.000216	trainloss: 1.5278	trainacc: 56.56%	testacc: 77.64%
+epoch: 215/300	current LR: 0.000211	trainloss: 1.4918	trainacc: 58.65%	testacc: 77.69%
+epoch: 216/300	current LR: 0.000207	trainloss: 1.5269	trainacc: 57.15%	testacc: 78.60%
+epoch: 217/300	current LR: 0.000202	trainloss: 1.5348	trainacc: 54.99%	testacc: 79.62%
+epoch: 218/300	current LR: 0.000198	trainloss: 1.5436	trainacc: 56.24%	testacc: 77.99%
+epoch: 219/300	current LR: 0.000193	trainloss: 1.5386	trainacc: 55.63%	testacc: 79.01%
+epoch: 220/300	current LR: 0.000189	trainloss: 1.5639	trainacc: 55.44%	testacc: 79.88%
+epoch: 221/300	current LR: 0.000185	trainloss: 1.5380	trainacc: 55.61%	testacc: 78.81%
+epoch: 222/300	current LR: 0.000180	trainloss: 1.5174	trainacc: 57.21%	testacc: 79.57%
+epoch: 223/300	current LR: 0.000176	trainloss: 1.5861	trainacc: 54.13%	testacc: 79.62%
+epoch: 224/300	current LR: 0.000172	trainloss: 1.4854	trainacc: 58.71%	testacc: 79.16%
+epoch: 225/300	current LR: 0.000168	trainloss: 1.5397	trainacc: 56.09%	testacc: 80.49%
+epoch: 226/300	current LR: 0.000164	trainloss: 1.5038	trainacc: 57.95%	testacc: 80.03%
+epoch: 227/300	current LR: 0.000159	trainloss: 1.4980	trainacc: 58.10%	testacc: 79.83%
+epoch: 228/300	current LR: 0.000155	trainloss: 1.4908	trainacc: 56.81%	testacc: 79.98%
+epoch: 229/300	current LR: 0.000151	trainloss: 1.4828	trainacc: 58.67%	testacc: 81.20%
+epoch: 230/300	current LR: 0.000147	trainloss: 1.5231	trainacc: 55.61%	testacc: 80.13%
+epoch: 231/300	current LR: 0.000143	trainloss: 1.5065	trainacc: 57.61%	testacc: 80.74%
+epoch: 232/300	current LR: 0.000139	trainloss: 1.5307	trainacc: 56.56%	testacc: 80.23%
+epoch: 233/300	current LR: 0.000136	trainloss: 1.4978	trainacc: 56.30%	testacc: 79.72%
+epoch: 234/300	current LR: 0.000132	trainloss: 1.4845	trainacc: 58.48%	testacc: 80.54%
+epoch: 235/300	current LR: 0.000128	trainloss: 1.5077	trainacc: 57.74%	testacc: 80.85%
+epoch: 236/300	current LR: 0.000124	trainloss: 1.4990	trainacc: 58.08%	testacc: 80.85%
+epoch: 237/300	current LR: 0.000121	trainloss: 1.4853	trainacc: 58.50%	testacc: 81.00%
+epoch: 238/300	current LR: 0.000117	trainloss: 1.4789	trainacc: 58.59%	testacc: 80.54%
+epoch: 239/300	current LR: 0.000113	trainloss: 1.5001	trainacc: 58.44%	testacc: 80.59%
+epoch: 240/300	current LR: 0.000110	trainloss: 1.4972	trainacc: 58.39%	testacc: 80.95%
+epoch: 241/300	current LR: 0.000107	trainloss: 1.4880	trainacc: 58.99%	testacc: 80.85%
+epoch: 242/300	current LR: 0.000103	trainloss: 1.5388	trainacc: 55.37%	testacc: 81.92%
+epoch: 243/300	current LR: 0.000100	trainloss: 1.4592	trainacc: 60.06%	testacc: 81.25%
+epoch: 244/300	current LR: 0.000096	trainloss: 1.4839	trainacc: 59.13%	testacc: 81.51%
+epoch: 245/300	current LR: 0.000093	trainloss: 1.4728	trainacc: 60.74%	testacc: 80.85%
+epoch: 246/300	current LR: 0.000090	trainloss: 1.4388	trainacc: 60.46%	testacc: 80.74%
+epoch: 247/300	current LR: 0.000087	trainloss: 1.5148	trainacc: 57.93%	testacc: 80.95%
+epoch: 248/300	current LR: 0.000084	trainloss: 1.4927	trainacc: 59.35%	testacc: 81.56%
+epoch: 249/300	current LR: 0.000081	trainloss: 1.4653	trainacc: 60.11%	testacc: 81.46%
+epoch: 250/300	current LR: 0.000078	trainloss: 1.4982	trainacc: 58.08%	testacc: 81.25%
+epoch: 251/300	current LR: 0.000075	trainloss: 1.4611	trainacc: 60.19%	testacc: 81.36%
+epoch: 252/300	current LR: 0.000072	trainloss: 1.5148	trainacc: 56.66%	testacc: 80.74%
+epoch: 253/300	current LR: 0.000069	trainloss: 1.5010	trainacc: 59.05%	testacc: 81.41%
+epoch: 254/300	current LR: 0.000066	trainloss: 1.4852	trainacc: 59.49%	testacc: 82.07%
+epoch: 255/300	current LR: 0.000063	trainloss: 1.4355	trainacc: 59.75%	testacc: 81.36%
+epoch: 256/300	current LR: 0.000061	trainloss: 1.4308	trainacc: 60.78%	testacc: 81.76%
+epoch: 257/300	current LR: 0.000058	trainloss: 1.4939	trainacc: 57.93%	testacc: 81.51%
+epoch: 258/300	current LR: 0.000055	trainloss: 1.4811	trainacc: 57.99%	testacc: 81.66%
+epoch: 259/300	current LR: 0.000053	trainloss: 1.4514	trainacc: 59.96%	testacc: 81.56%
+epoch: 260/300	current LR: 0.000050	trainloss: 1.4868	trainacc: 57.61%	testacc: 82.17%
+epoch: 261/300	current LR: 0.000048	trainloss: 1.4281	trainacc: 60.36%	testacc: 82.02%
+epoch: 262/300	current LR: 0.000046	trainloss: 1.4900	trainacc: 58.56%	testacc: 81.86%
+epoch: 263/300	current LR: 0.000043	trainloss: 1.4657	trainacc: 58.94%	testacc: 81.92%
+epoch: 264/300	current LR: 0.000041	trainloss: 1.4600	trainacc: 59.83%	testacc: 81.51%
+epoch: 265/300	current LR: 0.000039	trainloss: 1.4380	trainacc: 61.39%	testacc: 81.15%
+epoch: 266/300	current LR: 0.000037	trainloss: 1.4563	trainacc: 60.21%	testacc: 81.97%
+epoch: 267/300	current LR: 0.000035	trainloss: 1.4383	trainacc: 60.55%	testacc: 81.46%
+epoch: 268/300	current LR: 0.000033	trainloss: 1.4855	trainacc: 59.81%	testacc: 81.71%
+epoch: 269/300	current LR: 0.000031	trainloss: 1.4604	trainacc: 60.61%	testacc: 81.66%
+epoch: 270/300	current LR: 0.000029	trainloss: 1.4840	trainacc: 59.45%	testacc: 81.97%
+epoch: 271/300	current LR: 0.000027	trainloss: 1.4852	trainacc: 58.94%	testacc: 82.22%
+epoch: 272/300	current LR: 0.000025	trainloss: 1.4530	trainacc: 61.31%	testacc: 81.86%
+epoch: 273/300	current LR: 0.000024	trainloss: 1.4693	trainacc: 58.80%	testacc: 81.81%
+epoch: 274/300	current LR: 0.000022	trainloss: 1.4798	trainacc: 60.06%	testacc: 81.66%
+epoch: 275/300	current LR: 0.000021	trainloss: 1.4629	trainacc: 60.19%	testacc: 81.76%
+epoch: 276/300	current LR: 0.000019	trainloss: 1.4228	trainacc: 61.67%	testacc: 82.32%
+epoch: 277/300	current LR: 0.000018	trainloss: 1.4509	trainacc: 60.46%	testacc: 82.02%
+epoch: 278/300	current LR: 0.000016	trainloss: 1.3928	trainacc: 62.03%	testacc: 81.81%
+epoch: 279/300	current LR: 0.000015	trainloss: 1.4225	trainacc: 62.26%	testacc: 81.92%
+epoch: 280/300	current LR: 0.000014	trainloss: 1.4632	trainacc: 59.35%	testacc: 81.76%
+epoch: 281/300	current LR: 0.000012	trainloss: 1.4588	trainacc: 60.49%	testacc: 81.92%
+epoch: 282/300	current LR: 0.000011	trainloss: 1.4443	trainacc: 60.23%	testacc: 81.86%
+epoch: 283/300	current LR: 0.000010	trainloss: 1.4488	trainacc: 60.00%	testacc: 82.17%
+epoch: 284/300	current LR: 0.000009	trainloss: 1.4415	trainacc: 60.13%	testacc: 82.17%
+epoch: 285/300	current LR: 0.000008	trainloss: 1.4475	trainacc: 59.83%	testacc: 82.32%
+epoch: 286/300	current LR: 0.000007	trainloss: 1.5015	trainacc: 58.71%	testacc: 82.27%
+epoch: 287/300	current LR: 0.000006	trainloss: 1.4911	trainacc: 58.08%	testacc: 82.22%
+epoch: 288/300	current LR: 0.000006	trainloss: 1.4135	trainacc: 62.72%	testacc: 82.22%
+epoch: 289/300	current LR: 0.000005	trainloss: 1.4662	trainacc: 61.39%	testacc: 82.12%
+epoch: 290/300	current LR: 0.000004	trainloss: 1.4535	trainacc: 60.89%	testacc: 82.17%
+epoch: 291/300	current LR: 0.000004	trainloss: 1.4470	trainacc: 59.85%	testacc: 82.12%
+epoch: 292/300	current LR: 0.000003	trainloss: 1.4224	trainacc: 61.22%	testacc: 82.22%
+epoch: 293/300	current LR: 0.000003	trainloss: 1.4726	trainacc: 58.92%	testacc: 82.12%
+epoch: 294/300	current LR: 0.000002	trainloss: 1.4813	trainacc: 59.58%	testacc: 82.17%
+epoch: 295/300	current LR: 0.000002	trainloss: 1.4714	trainacc: 59.92%	testacc: 82.12%
+epoch: 296/300	current LR: 0.000002	trainloss: 1.4685	trainacc: 60.30%	testacc: 82.32%
+epoch: 297/300	current LR: 0.000001	trainloss: 1.5003	trainacc: 57.63%	testacc: 82.12%
+epoch: 298/300	current LR: 0.000001	trainloss: 1.4700	trainacc: 60.08%	testacc: 82.22%
+epoch: 299/300	current LR: 0.000001	trainloss: 1.4488	trainacc: 60.87%	testacc: 82.17%
+epoch: 300/300	current LR: 0.000001	trainloss: 1.4735	trainacc: 59.16%	testacc: 82.12%
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading output.log; uploading wandb-summary.json
+wandb: uploading summary
+wandb: 
+wandb: Run history:
+wandb:     epoch ▁▁▁▁▁▂▂▂▂▂▃▃▃▄▄▄▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▇▇▇▇▇▇███
+wandb:        lr ▂▃▇███████▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▃▃▃▃▃▂▁▁▁▁▁▁▁▁
+wandb:   testacc ▂▃▁▂▃▃▃▄▄▄▅▅▅▅▆▆▆▆▆▆▆▆▇▇▇▇▇▇▇███████████
+wandb:  testloss █▇███▇▇▆▇▆▆▅▅▅▄▄▄▃▃▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb:  trainacc ▂▂▂▁▁▂▂▂▂▂▃▃▃▃▃▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇█▇██████
+wandb: trainloss ▇▇███▇▇▇▇▇▆▆▆▅▅▅▅▄▄▄▄▄▄▄▄▃▃▃▂▃▂▃▂▂▂▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:     epoch 300
+wandb:        lr 0.0
+wandb:   testacc 0.82119
+wandb:  testloss 0.66357
+wandb:  trainacc 0.59155
+wandb: trainloss 1.47349
+wandb: 
+wandb: 🚀 View run vit-cutmix at: https://wandb.ai/sian-shinjo-iiit-hyderabad/vision-transformer/runs/vdir3ygq
+wandb: ⭐️ View project at: https://wandb.ai/sian-shinjo-iiit-hyderabad/vision-transformer
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260822_144142-vdir3ygq/logs

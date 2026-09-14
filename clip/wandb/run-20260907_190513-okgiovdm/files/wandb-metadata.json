@@ -1,0 +1,21 @@
+{
+  "os": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2026-09-07T13:35:13.243958Z",
+  "args": [
+    "--config",
+    "config/toy-clip.json"
+  ],
+  "program": "/home2/sian/summer-project/clip/train.py",
+  "codePath": "clip/train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "git@github.com:noss123/summer-project.git",
+    "commit": "5fb17d854bbf281457ad7797a736afe176243648"
+  },
+  "email": "sian.shinjo@students.iiit.ac.in",
+  "root": "/home2/sian/summer-project/clip",
+  "host": "gnode084",
+  "executable": "/home2/sian/summer-project/vision_transformer/.venv/bin/python",
+  "writerId": "5h1cr52alm0jek706bwrrjeeey6f7ueg"
+}

@@ -1,0 +1,73 @@
+++ hostname
++ echo 'Job started on: gnode085'
++ echo 'My GPUs:'
++ nvidia-smi --query-gpu=name,memory.total --format=csv
+++ nproc
++ echo 'My CPUs: 10'
++ mkdir -p logs checkpoints
++ SCRATCH_DIR=/ssd_scratch/cvit/sian/datasets/Flickr8k
++ mkdir -p /ssd_scratch/cvit/sian/datasets/Flickr8k
++ cd /ssd_scratch/cvit/sian/datasets/Flickr8k
++ '[' '!' -d images ']'
++ echo 'Data already exists on this node'\''s scratch. Skipping download.'
++ cd /home2/sian/summer-project/clip
++ echo 'Launching toy CLIP training on single GPU...'
++ /home2/sian/summer-project/vision_transformer/.venv/bin/python -u train.py --config config/toy-clip.json
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/sian/.netrc.
+wandb: Currently logged in as: sian-shinjo (sian-shinjo-iiit-hyderabad) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run zx210h22
+wandb: Tracking run with wandb version 0.28.2
+wandb: Run data is saved locally in /home2/sian/summer-project/clip/wandb/run-20260908_025750-zx210h22
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run toy-clip
+wandb: ⭐️ View project at https://wandb.ai/sian-shinjo-iiit-hyderabad/clip
+wandb: 🚀 View run at https://wandb.ai/sian-shinjo-iiit-hyderabad/clip/runs/zx210h22
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 6642.55it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading config.yaml
+wandb: uploading history steps 20-20, summary, console lines 50-50
+wandb: 
+wandb: Run history:
+wandb:              epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:       i2t_recall@1 ▁▃▂▃▄▄▅▆▅▆▇▅▄▅▆▅█▆▆▆
+wandb:      i2t_recall@10 ▁▂▃▄▅▅▅▆▆▇▇▇▇▆█▆▇███
+wandb:       i2t_recall@5 ▁▂▃▄▅▄▆▇▇▆▇▇▇▆█▇▇██▇
+wandb:        logit_scale ▃▃▂▂▂▁▁▁▁▁▁▁▁▂▃▃▄▅▇█
+wandb:       t2i_recall@1 ▁▂▃▃▄▄▄▆▅▅▆▄▆▇▇▇█▄▆▆
+wandb:      t2i_recall@10 ▁▂▃▃▅▅▅▇▆▆▆▇▇██▇▇█▇▇
+wandb:       t2i_recall@5 ▁▂▃▃▄▄▅▆▇▆▆▇▇██▇▇▇▇▇
+wandb:  test_i2t_recall@1 ▁
+wandb: test_i2t_recall@10 ▁
+wandb:                 +6 ...
+wandb: 
+wandb: Run summary:
+wandb:              epoch 20
+wandb:       i2t_recall@1 3.09023
+wandb:      i2t_recall@10 19.15946
+wandb:       i2t_recall@5 12.11372
+wandb:        logit_scale 14.67567
+wandb:       t2i_recall@1 3.70828
+wandb:      t2i_recall@10 18.17058
+wandb:       t2i_recall@5 11.8665
+wandb:  test_i2t_recall@1 2.22222
+wandb: test_i2t_recall@10 17.90124
+wandb:                 +6 ...
+wandb: 
+wandb: 🚀 View run toy-clip at: https://wandb.ai/sian-shinjo-iiit-hyderabad/clip/runs/zx210h22
+wandb: ⭐️ View project at: https://wandb.ai/sian-shinjo-iiit-hyderabad/clip
+wandb: Synced 5 W&B file(s), 20 media file(s), 45 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260908_025750-zx210h22/logs
++ echo 'Training completed successfully.'

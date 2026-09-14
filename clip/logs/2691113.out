@@ -1,0 +1,35 @@
+==========================================
+SLURM_JOB_ID = 2691113
+SLURM_NODELIST = gnode085
+SLURM_JOB_GPUS = 0,1,2,3
+==========================================
+Job started on: gnode085
+My GPUs:
+name, memory.total [MiB]
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+My CPUs: 10
+Data already exists on this node's scratch. Skipping download.
+Launching toy CLIP training on single GPU...
+Loading config from: config/toy-clip.json
+Setting seed...
+Initialising wandb...
+Using device: cuda
+Setting up image transforms...
+Initialising Flickr8k dataset...
+Dataloader initialised: Found 8091 valid images.
+Setting up train/test splits and dataloaders...
+Initialising CLIP model...
+CLIP model initialised successfully.
+Loading ViT pretrained weights from ../vision_transformer/checkpoints/vit-cutmix.pt...
+Successfully loaded pretrained ViT backbone from ../vision_transformer/checkpoints/vit-cutmix.pt
+epoch: 1 | train_loss: 3.2976 | val_loss: 3.0432 | i2t_recall@1: 0.49 | t2i_recall@1: 0.12 | scale: 14.2505
+Saved new best model with validation loss 3.0432
+epoch: 2 | train_loss: 3.0513 | val_loss: 2.8987 | i2t_recall@1: 1.48 | t2i_recall@1: 0.87 | scale: 14.2221
+Saved new best model with validation loss 2.8987
+epoch: 3 | train_loss: 2.8618 | val_loss: 2.8120 | i2t_recall@1: 0.87 | t2i_recall@1: 1.24 | scale: 14.2015
+Saved new best model with validation loss 2.8120
+epoch: 4 | train_loss: 2.6735 | val_loss: 2.7500 | i2t_recall@1: 1.48 | t2i_recall@1: 1.73 | scale: 14.1726
+Saved new best model with validation loss 2.7500

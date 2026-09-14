@@ -1,0 +1,165 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            26ftby0e9dm4f4fsg9hxl35r478yufh1:
+                args:
+                    - --config
+                    - config/toy-clip.json
+                codePath: clip/train.py
+                codePathLocal: train.py
+                cpu_count: 20
+                cpu_count_logical: 40
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "234039422976"
+                        used: "93467553792"
+                email: sian.shinjo@students.iiit.ac.in
+                executable: /home2/sian/summer-project/vision_transformer/.venv/bin/python
+                git:
+                    commit: 5fb17d854bbf281457ad7797a736afe176243648
+                    remote: git@github.com:noss123/summer-project.git
+                gpu: NVIDIA GeForce RTX 2080 Ti
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-e1d029ee-952c-73a0-1a3e-d46f0bd74fe1
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-0ba43e7b-68e3-edee-77a8-a22f82ac4e85
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-955b6f11-f5c1-af48-b919-777b06e84cbe
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-be07cf9b-3f3b-cc8f-3945-37a655156baf
+                host: gnode085
+                memory:
+                    total: "135025557504"
+                os: Linux-5.15.0-187-generic-x86_64-with-glibc2.35
+                program: /home2/sian/summer-project/clip/train.py
+                python: CPython 3.10.12
+                root: /home2/sian/summer-project/clip
+                slurm:
+                    cluster_name: ada
+                    conf: /etc/slurm/slurm.conf
+                    cpu_bind: quiet,mask_cpu:0x003FF003FF
+                    cpu_bind_list: "0x003FF003FF"
+                    cpu_bind_type: 'mask_cpu:'
+                    cpu_bind_verbose: quiet
+                    cpus_on_node: "10"
+                    cpus_per_task: "10"
+                    distribution: block,pack
+                    gpus_on_node: "4"
+                    gtids: "0"
+                    job_account: sian
+                    job_cpus_per_node: "10"
+                    job_cpus_per_node_pack_group_0: "20"
+                    job_gid: "2002"
+                    job_gpus: 0,1,2,3
+                    job_id: "2691153"
+                    job_name: clip
+                    job_nodelist: gnode085
+                    job_num_nodes: "1"
+                    job_partition: u22
+                    job_qos: normal
+                    job_uid: "3980"
+                    job_user: sian
+                    jobid: "2691153"
+                    launch_node_ipaddr: 172.16.0.2
+                    localid: "0"
+                    mem_per_cpu: "1536"
+                    nnodes: "1"
+                    node_aliases: (null)
+                    nodeid: "0"
+                    nodelist: gnode085
+                    nprocs: "1"
+                    ntasks: "1"
+                    ntasks_per_node: "20"
+                    prio_process: "0"
+                    procid: "0"
+                    pty_port: "41687"
+                    pty_win_col: "146"
+                    pty_win_row: "36"
+                    script_context: prolog_task
+                    srun_comm_host: 172.16.0.2
+                    srun_comm_port: "42508"
+                    step_id: "0"
+                    step_launcher_port: "42508"
+                    step_nodelist: gnode085
+                    step_num_nodes: "1"
+                    step_num_tasks: "20"
+                    step_tasks_per_node: "20"
+                    stepid: "0"
+                    submit_dir: /home2/sian/summer-project/clip
+                    submit_host: gnode085
+                    task_pid: "3453687"
+                    tasks_per_node: "1"
+                    topology_addr: gnode085
+                    topology_addr_pattern: node
+                    working_cluster: ada:172.16.0.2:6817:9728:109
+                startedAt: "2026-09-07T22:58:31.731010Z"
+                writerId: 26ftby0e9dm4f4fsg9hxl35r478yufh1
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+            "3":
+                - 2
+                - 13
+                - 16
+                - 78
+            "4": 3.10.12
+            "5": 0.28.2
+            "6": 5.16.1
+            "12": 0.28.2
+            "13": linux-x86_64
+annotations:
+    value: ../data/Flickr8k/text/Flickr8k.token.txt
+batch_size:
+    value: 32
+bert_lr:
+    value: 2e-06
+checkpoint_path:
+    value: checkpoints/toy-clip.pt
+datapath:
+    value: ../data/Flickr8k/images
+embed_dim:
+    value: 256
+epochs:
+    value: 20
+freeze_epochs:
+    value: 2
+head_lr:
+    value: 0.0001
+num_workers:
+    value: 4
+run:
+    value: toy-clip
+vit_lr:
+    value: 5e-06
+vit_pretrained_path:
+    value: ../vision_transformer/checkpoints/vit-cutmix.pt
+warmup_ratio:
+    value: 0.05
+weight_decay:
+    value: 0.01

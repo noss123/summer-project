@@ -1,0 +1,62 @@
+Using device: cuda
+Setting up image transforms...
+Initialising Flickr8k dataset...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Dataloader initialised: Found 8091 valid images.
+Setting up dataloader...
+Initialising CLIP model...
+Loading weights: 100%|██████████| 100/100 [00:00<00:00, 6096.99it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  |
+------------------------+------------+--+-
+vocab_transform.bias    | UNEXPECTED |  |
+vocab_projector.bias    | UNEXPECTED |  |
+vocab_transform.weight  | UNEXPECTED |  |
+vocab_layer_norm.weight | UNEXPECTED |  |
+vocab_layer_norm.bias   | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+CLIP model initialised successfully.
+Loading ViT pretrained weights from ../vision_transformer/checkpoints/vit-cutmix.pt...
+Successfully loaded pretrained ViT backbone from ../vision_transformer/checkpoints/vit-cutmix.pt
+epoch: 1, train_loss: 3.2366, scale: 14.2366
+Saved new best model with loss 3.2366
+epoch: 2, train_loss: 2.9648, scale: 14.1928
+Saved new best model with loss 2.9648
+epoch: 3, train_loss: 2.7315, scale: 14.1581
+Saved new best model with loss 2.7315
+epoch: 4, train_loss: 2.5546, scale: 14.1335
+Saved new best model with loss 2.5546
+epoch: 5, train_loss: 2.3862, scale: 14.1016
+Saved new best model with loss 2.3862
+epoch: 6, train_loss: 2.2549, scale: 14.0810
+Saved new best model with loss 2.2549
+epoch: 7, train_loss: 2.1090, scale: 14.0658
+Saved new best model with loss 2.1090
+epoch: 8, train_loss: 2.0111, scale: 14.0618
+Saved new best model with loss 2.0111
+epoch: 9, train_loss: 1.8645, scale: 14.0570
+Saved new best model with loss 1.8645
+epoch: 10, train_loss: 1.7366, scale: 14.0584
+Saved new best model with loss 1.7366
+epoch: 11, train_loss: 1.6167, scale: 14.0707
+Saved new best model with loss 1.6167
+epoch: 12, train_loss: 1.4967, scale: 14.1019
+Saved new best model with loss 1.4967
+epoch: 13, train_loss: 1.4044, scale: 14.1379
+Saved new best model with loss 1.4044
+epoch: 14, train_loss: 1.2834, scale: 14.1900
+Saved new best model with loss 1.2834
+epoch: 15, train_loss: 1.1733, scale: 14.2579
+Saved new best model with loss 1.1733
+epoch: 16, train_loss: 1.0738, scale: 14.3538
+Saved new best model with loss 1.0738
+epoch: 17, train_loss: 0.9856, scale: 14.4725
+Saved new best model with loss 0.9856
+epoch: 18, train_loss: 0.8994, scale: 14.6168
+Saved new best model with loss 0.8994
+epoch: 19, train_loss: 0.8760, scale: 14.7380
+Saved new best model with loss 0.8760
+epoch: 20, train_loss: 0.8195, scale: 14.8905
+Saved new best model with loss 0.8195

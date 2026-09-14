@@ -1,0 +1,14 @@
+++ hostname
++ echo 'Job started on: gnode085'
++ echo 'My GPUs:'
++ nvidia-smi --query-gpu=name,memory.total --format=csv
+++ nproc
++ echo 'My CPUs: 10'
++ mkdir -p logs checkpoints
++ SCRATCH_DIR=/ssd_scratch/cvit/sian/datasets/Flickr8k
++ mkdir -p /ssd_scratch/cvit/sian/datasets/Flickr8k
++ cd /ssd_scratch/cvit/sian/datasets/Flickr8k
++ '[' '!' -d images ']'
++ echo 'Downloading Flickr8k directly to ssd_scratch...'
++ wget -q https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
+slurmstepd: error: *** JOB 2691110 ON gnode085 CANCELLED AT 2026-09-08T02:47:05 ***

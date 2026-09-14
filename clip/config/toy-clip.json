@@ -1,0 +1,17 @@
+{
+    "run": "toy-clip",
+    "datapath": "../data/Flickr8k/images",
+    "annotations": "../data/Flickr8k/text/Flickr8k.token.txt",
+    "vit_pretrained_path": "../vision_transformer/checkpoints/vit-cutmix.pt",
+    "checkpoint_path": "checkpoints/toy-clip.pt",
+    "embed_dim": 256,
+    "batch_size": 32,
+    "num_workers": 4,
+    "epochs": 20,
+    "weight_decay": 0.01,
+    "freeze_epochs": 2,
+    "warmup_ratio": 0.05,
+    "vit_lr": 0.000005,
+    "bert_lr": 0.000002,
+    "head_lr": 0.0001
+}

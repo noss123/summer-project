@@ -1,0 +1,48 @@
+==========================================
+SLURM_JOB_ID = 2675001
+SLURM_NODELIST = gnode083
+SLURM_JOB_GPUS = 0,1,2,3
+==========================================
+Job started on: gnode083
+My GPUs:
+name, memory.total [MiB]
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 4080, 16376 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+Sat Aug 22 14:41:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.211.01             Driver Version: 570.211.01     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:02:00.0 Off |                  N/A |
+| 37%   32C    P0             56W /  250W |       0MiB /  11264MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:03:00.0 Off |                  N/A |
+| 37%   33C    P0             46W /  250W |       0MiB /  11264MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 4080        Off |   00000000:82:00.0 Off |                  N/A |
+| 43%   29C    P0             36W /  320W |       0MiB /  16376MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:83:00.0 Off |                  N/A |
+| 37%   34C    P0             56W /  250W |       0MiB /  11264MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+My CPUs: 36
+Launching Baseline study on GPUs 0 and 1...
+Launching CutMix study on GPUs 2 and 3...
+All runs completed successfully.

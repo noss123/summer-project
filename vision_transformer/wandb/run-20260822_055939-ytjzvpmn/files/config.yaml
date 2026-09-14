@@ -1,0 +1,136 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            12bc7qu9323rxxbq4ihwagijya2zjf3t:
+                args:
+                    - --config
+                    - config/cutmix.json
+                codePath: vision-transformer/train.py
+                codePathLocal: train.py
+                cpu_count: 20
+                cpu_count_logical: 40
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "234039422976"
+                        used: "91179528192"
+                email: sian.shinjo@students.iiit.ac.in
+                executable: /home2/sian/summer-project/vision-transformer/.venv/bin/python3
+                git:
+                    commit: 5fb17d854bbf281457ad7797a736afe176243648
+                    remote: git@github.com:noss123/summer-project.git
+                gpu: NVIDIA GeForce RTX 2080 Ti
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-bb735db3-bbe2-3644-d8ae-5a276cfe5877
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-a93d5af6-5155-256d-ae66-7b96c9210ab7
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-b844a3a5-1b8d-ea7f-0c93-7b1b2d73491e
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-fd435bdc-129e-1a2d-b9ad-cb2b0519e31e
+                host: gnode080
+                memory:
+                    total: "135025573888"
+                os: Linux-5.15.0-187-generic-x86_64-with-glibc2.35
+                program: /home2/sian/summer-project/vision-transformer/train.py
+                python: CPython 3.10.12
+                root: /home2/sian/summer-project/vision-transformer
+                slurm:
+                    cluster_name: ada
+                    conf: /etc/slurm/slurm.conf
+                    cpus_on_node: "36"
+                    gpus_on_node: "4"
+                    gtids: "0"
+                    job_account: sian
+                    job_cpus_per_node: "36"
+                    job_gid: "2002"
+                    job_gpus: 0,1,2,3
+                    job_id: "2674805"
+                    job_name: vision-transformer
+                    job_nodelist: gnode080
+                    job_num_nodes: "1"
+                    job_partition: u22
+                    job_qos: normal
+                    job_uid: "3980"
+                    job_user: sian
+                    jobid: "2674805"
+                    localid: "0"
+                    mem_per_cpu: "2048"
+                    nnodes: "1"
+                    node_aliases: (null)
+                    nodeid: "0"
+                    nodelist: gnode080
+                    nprocs: "36"
+                    ntasks: "36"
+                    prio_process: "0"
+                    procid: "0"
+                    script_context: prolog_task
+                    submit_dir: /home2/sian/summer-project/vision-transformer
+                    submit_host: ada.iiit.ac.in
+                    task_pid: "2803817"
+                    tasks_per_node: "36"
+                    topology_addr: gnode080
+                    topology_addr_pattern: node
+                    working_cluster: ada:172.16.0.2:6817:9728:109
+                startedAt: "2026-08-22T00:29:39.803644Z"
+                writerId: 12bc7qu9323rxxbq4ihwagijya2zjf3t
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.12
+            "5": 0.28.2
+            "12": 0.28.2
+            "13": linux-x86_64
+batchsize:
+    value: 32
+checkpoint_path:
+    value: checkpoints/vit-cutmix.pt
+csv_path:
+    value: logs/vit-cutmix_metrics.csv
+directory:
+    value: ../data
+drop_prob:
+    value: 0.1
+epochs:
+    value: 100
+imagedim:
+    value: 224
+lr:
+    value: 0.001
+min_lr:
+    value: 1e-06
+num_classes:
+    value: 10
+run:
+    value: vit-cutmix
+warmup:
+    value: 5
+weight_decay:
+    value: 0.05
+with_cutmix:
+    value: true

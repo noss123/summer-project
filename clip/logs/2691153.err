@@ -1,0 +1,74 @@
+++ hostname
++ echo 'Job started on: gnode085'
++ echo 'My GPUs:'
++ nvidia-smi --query-gpu=name,memory.total --format=csv
+++ nproc
++ echo 'My CPUs: 10'
++ mkdir -p logs checkpoints
++ SCRATCH_DIR=/ssd_scratch/cvit/sian/datasets/Flickr8k
++ mkdir -p /ssd_scratch/cvit/sian/datasets/Flickr8k
++ cd /ssd_scratch/cvit/sian/datasets/Flickr8k
++ '[' '!' -d images ']'
++ echo 'Data already exists on this node'\''s scratch. Skipping download.'
++ cd /home2/sian/summer-project/clip
++ echo 'Launching toy CLIP training on single GPU...'
++ /home2/sian/summer-project/vision_transformer/.venv/bin/python -u train.py --config config/toy-clip.json
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/sian/.netrc.
+wandb: Currently logged in as: sian-shinjo (sian-shinjo-iiit-hyderabad) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run jon02fdd
+wandb: Tracking run with wandb version 0.28.2
+wandb: Run data is saved locally in /home2/sian/summer-project/clip/wandb/run-20260908_042831-jon02fdd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run toy-clip
+wandb: ⭐️ View project at https://wandb.ai/sian-shinjo-iiit-hyderabad/clip
+wandb: 🚀 View run at https://wandb.ai/sian-shinjo-iiit-hyderabad/clip/runs/jon02fdd
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 6578.27it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+wandb: uploading media/table/qualitative_predictions_19_956d65c245ae83a1c71f.table.json; updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading history steps 19-20, summary, console lines 54-56
+wandb: uploading wandb-summary.json; uploading config.yaml
+wandb: uploading data
+wandb: 
+wandb: Run history:
+wandb:             epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:      i2t_recall@1 ▁▂▂▂▂▃▃▃▄▆▅▅▇▄▇▇█▆▇█
+wandb:     i2t_recall@10 ▁▂▂▃▃▄▅▄▅▆▆▇▇▇▇████▇
+wandb:      i2t_recall@5 ▁▂▂▂▂▄▄▄▅▆▇▆▆▆▇█████
+wandb:       logit_scale ▄▃▂▂▁▁▁▁▂▂▃▄▄▅▆▇████
+wandb:                lr ████▇▇▆▆▅▅▄▄▃▃▂▂▁▁▁▁
+wandb:      t2i_recall@1 ▁▂▁▂▂▂▃▄▃▅▄▆▆▆▆▆█▆▆▆
+wandb:     t2i_recall@10 ▁▁▂▂▄▄▄▅▅▆▇▇█▇█████▇
+wandb:      t2i_recall@5 ▁▁▁▂▃▃▄▄▅▆▅▇█▇████▇█
+wandb: test_i2t_recall@1 ▁
+wandb:                +7 ...
+wandb: 
+wandb: Run summary:
+wandb:             epoch 20
+wandb:      i2t_recall@1 3.70828
+wandb:     i2t_recall@10 16.93449
+wandb:      i2t_recall@5 11.49567
+wandb:       logit_scale 14.37974
+wandb:                lr 0
+wandb:      t2i_recall@1 2.71941
+wandb:     t2i_recall@10 16.44005
+wandb:      t2i_recall@5 10.25958
+wandb: test_i2t_recall@1 2.83951
+wandb:                +7 ...
+wandb: 
+wandb: 🚀 View run toy-clip at: https://wandb.ai/sian-shinjo-iiit-hyderabad/clip/runs/jon02fdd
+wandb: ⭐️ View project at: https://wandb.ai/sian-shinjo-iiit-hyderabad/clip
+wandb: Synced 5 W&B file(s), 20 media file(s), 45 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260908_042831-jon02fdd/logs
++ echo 'Training completed successfully.'

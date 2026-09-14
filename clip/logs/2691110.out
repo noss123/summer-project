@@ -1,0 +1,14 @@
+==========================================
+SLURM_JOB_ID = 2691110
+SLURM_NODELIST = gnode085
+SLURM_JOB_GPUS = 0,1,2,3
+==========================================
+Job started on: gnode085
+My GPUs:
+name, memory.total [MiB]
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+NVIDIA GeForce RTX 2080 Ti, 11264 MiB
+My CPUs: 10
+Downloading Flickr8k directly to ssd_scratch...

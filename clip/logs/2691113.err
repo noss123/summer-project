@@ -1,0 +1,38 @@
+++ hostname
++ echo 'Job started on: gnode085'
++ echo 'My GPUs:'
++ nvidia-smi --query-gpu=name,memory.total --format=csv
+++ nproc
++ echo 'My CPUs: 10'
++ mkdir -p logs checkpoints
++ SCRATCH_DIR=/ssd_scratch/cvit/sian/datasets/Flickr8k
++ mkdir -p /ssd_scratch/cvit/sian/datasets/Flickr8k
++ cd /ssd_scratch/cvit/sian/datasets/Flickr8k
++ '[' '!' -d images ']'
++ echo 'Data already exists on this node'\''s scratch. Skipping download.'
++ cd /home2/sian/summer-project/clip
++ echo 'Launching toy CLIP training on single GPU...'
++ /home2/sian/summer-project/vision_transformer/.venv/bin/python -u train.py --config config/toy-clip.json
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/sian/.netrc.
+wandb: Currently logged in as: sian-shinjo (sian-shinjo-iiit-hyderabad) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run bmonutk7
+wandb: Tracking run with wandb version 0.28.2
+wandb: Run data is saved locally in /home2/sian/summer-project/clip/wandb/run-20260908_024734-bmonutk7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run toy-clip
+wandb: ⭐️ View project at https://wandb.ai/sian-shinjo-iiit-hyderabad/clip
+wandb: 🚀 View run at https://wandb.ai/sian-shinjo-iiit-hyderabad/clip/runs/bmonutk7
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 6444.65it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+slurmstepd: error: *** JOB 2691113 ON gnode085 CANCELLED AT 2026-09-08T02:57:22 ***

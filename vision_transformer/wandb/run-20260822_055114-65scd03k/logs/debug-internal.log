@@ -1,0 +1,9 @@
+{"time":"2026-08-22T05:51:14.223322316+05:30","level":"INFO","msg":"wandb-core"}
+{"time":"2026-08-22T05:51:14.223875245+05:30","level":"INFO","msg":"stream: starting","core version":"0.28.2"}
+{"time":"2026-08-22T05:51:14.560050747+05:30","level":"INFO","msg":"stream: created new stream","id":"65scd03k"}
+{"time":"2026-08-22T05:51:14.56012164+05:30","level":"INFO","msg":"handler: started"}
+{"time":"2026-08-22T05:51:14.561631842+05:30","level":"INFO","msg":"stream: started"}
+{"time":"2026-08-22T05:51:14.561732855+05:30","level":"INFO","msg":"sender: started"}
+{"time":"2026-08-22T05:51:14.561725161+05:30","level":"INFO","msg":"writer: started","stream_id":"65scd03k"}
+{"time":"2026-08-22T05:51:16.870874726+05:30","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-08-22T05:51:17.399867674+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}

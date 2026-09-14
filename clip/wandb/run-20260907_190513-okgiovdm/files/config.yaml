@@ -1,0 +1,60 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            5h1cr52alm0jek706bwrrjeeey6f7ueg:
+                args:
+                    - --config
+                    - config/toy-clip.json
+                codePath: clip/train.py
+                codePathLocal: train.py
+                email: sian.shinjo@students.iiit.ac.in
+                executable: /home2/sian/summer-project/vision_transformer/.venv/bin/python
+                git:
+                    commit: 5fb17d854bbf281457ad7797a736afe176243648
+                    remote: git@github.com:noss123/summer-project.git
+                host: gnode084
+                os: Linux-5.15.0-187-generic-x86_64-with-glibc2.35
+                program: /home2/sian/summer-project/clip/train.py
+                python: CPython 3.10.12
+                root: /home2/sian/summer-project/clip
+                startedAt: "2026-09-07T13:35:13.243958Z"
+                writerId: 5h1cr52alm0jek706bwrrjeeey6f7ueg
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+            "3":
+                - 16
+            "4": 3.10.12
+            "5": 0.28.2
+            "6": 5.16.1
+            "12": 0.28.2
+            "13": linux-x86_64
+annotations:
+    value: ../data/Flickr8k/captions.txt
+batch_size:
+    value: 32
+checkpoint_path:
+    value: checkpoints/toy-clip.pt
+datapath:
+    value: ../data/Flickr8k/images
+embed_dim:
+    value: 256
+epochs:
+    value: 20
+learning_rate:
+    value: 0.0001
+run:
+    value: toy-clip
+vit_pretrained_path:
+    value: ../vision_transformer/checkpoints/vit-cutmix.pt
